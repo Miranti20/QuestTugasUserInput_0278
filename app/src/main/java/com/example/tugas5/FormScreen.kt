@@ -97,6 +97,14 @@ fun ComposableFormBiodata() {
                         shape = RoundedCornerShape(12.dp),
                         modifier = Modifier.weight(1f)
                     )
+                    Spacer(modifier = Modifier.height(12.dp))
+                    OutlinedTextField(
+                        value = email,
+                        onValueChange = { email = it },
+                        label = { Text(stringResource(id = R.string.label_email)) },
+                        shape = RoundedCornerShape(12.dp),
+                        modifier = Modifier.fillMaxWidth()
+                    )
 
                 }
             }
