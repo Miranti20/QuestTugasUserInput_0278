@@ -23,10 +23,13 @@ import com.example.tugas5.ui.theme.CardBackground
 import com.example.tugas5.ui.theme.ButtonBackground
 import com.example.tugas5.ui.theme.PurpleTitle
 import com.example.tugas5.ui.theme.SubtitleGray
+import android.widget.Toast
+import androidx.compose.ui.platform.LocalContext
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ComposableFormBiodata() {
+    val context = LocalContext.current
     var namaDepan by remember { mutableStateOf("") }
     var namaBelakang by remember { mutableStateOf("") }
     var email by remember { mutableStateOf("") }
@@ -132,6 +135,23 @@ fun ComposableFormBiodata() {
                             modifier = Modifier.fillMaxWidth()
                         )
                         Spacer(modifier = Modifier.height(8.dp))
+                        Spacer(modifier = Modifier.height(24.dp))
+                        Button(
+                            onClick = { Toast.makeText(context, "Tombol Prosed ditekan!", Toast.LENGTH_SHORT).show()},
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .height(48.dp),
+                            shape = RoundedCornerShape(12.dp),
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = ButtonBackground,
+                                contentColor = Color.White
+                            )
+                        ) {
+                            Text(
+                                text = stringResource(id = R.string.btn_proceed),
+                                fontWeight = FontWeight.Bold
+                            )
+                        }
                     }
 
                 }
