@@ -110,7 +110,13 @@ fun ComposableFormBiodata() {
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.spacedBy(12.dp)
                     ) {
-
+                        OutlinedTextField(
+                            value = tglLahir,
+                            onValueChange = { tglLahir = it },
+                            label = { Text(stringResource(id = R.string.label_tgl_lahir)) },
+                            shape = RoundedCornerShape(12.dp),
+                            modifier = Modifier.weight(1f)
+                        )
                     }
 
                 }
