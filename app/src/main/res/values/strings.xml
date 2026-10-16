@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">tugas5</string>
+    <string name="title_form">Form Biodata</string>
+    <string name="subtitle_form">Silahkan isi biodata Anda dibawah ini !!!</string>
 </resources>
