@@ -24,8 +24,20 @@ import com.example.tugas5.ui.theme.ButtonBackground
 import com.example.tugas5.ui.theme.PurpleTitle
 import com.example.tugas5.ui.theme.SubtitleGray
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun FormBiodataScreen() {
+fun ComposableFormBiodata() {
+    var namaDepan by remember { mutableStateOf("") }
+    var namaBelakang by remember { mutableStateOf("") }
+    var email by remember { mutableStateOf("") }
+    var tglLahir by remember { mutableStateOf("") }
+    var experience by remember { mutableStateOf("") }
+
+    // State Checkbox
+    var isAndroidChecked by remember { mutableStateOf(false) }
+    var isUiUxChecked by remember { mutableStateOf(false) }
+    var isWebChecked by remember { mutableStateOf(false) }
+
     Box(
         modifier = Modifier
             .fillMaxSize()
