@@ -8,7 +8,7 @@ Hasil running pada emulator Android 9 / API 28. Data pada contoh adalah data dem
 
 | Form awal | Form lengkap | Hasil Proceed |
 | --- | --- | --- |
-| ![Form kosong](docs/screenshots/form-kosong.png) | ![Form terisi](docs/screenshots/form-terisi.png) | ![Ringkasan biodata](<img width="113" height="238" alt="image" src="https://github.com/user-attachments/assets/b656159b-e844-4d4c-9d95-c822aaf27d64" />) |
+| ![Form kosong](docs/screenshots/form-kosong.png) | ![Form terisi](docs/screenshots/form-terisi.png) | ![Ringkasan biodata]() |
 
 ## Fitur
 
