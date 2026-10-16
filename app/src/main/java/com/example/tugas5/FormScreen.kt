@@ -124,6 +124,14 @@ fun ComposableFormBiodata() {
                             shape = RoundedCornerShape(12.dp),
                             modifier = Modifier.weight(1f)
                         )
+                        Spacer(modifier = Modifier.height(20.dp))
+                        Text(
+                            text = stringResource(id = R.string.section_skill),
+                            fontSize = 14.sp,
+                            fontWeight = FontWeight.Bold,
+                            modifier = Modifier.fillMaxWidth()
+                        )
+                        Spacer(modifier = Modifier.height(8.dp))
                     }
 
                 }
