@@ -19,6 +19,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.tugas5.ui.theme.CardBackground
+import com.example.tugas5.ui.theme.ButtonBackground
+import com.example.tugas5.ui.theme.PurpleTitle
+import com.example.tugas5.ui.theme.SubtitleGray
 
 @Composable
 fun FormBiodataScreen() {
@@ -35,5 +39,14 @@ fun FormBiodataScreen() {
                 .fillMaxWidth()
                 .height(260.dp)
         )
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(top = 200.dp)
+                .clip(RoundedCornerShape(topStart = 32.dp, topEnd = 32.dp))
+                .background(CardBackground)
+        ) {
+            // Isi card
+        }
     }
 }
