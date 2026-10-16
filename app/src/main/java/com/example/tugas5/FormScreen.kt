@@ -334,7 +334,8 @@ private fun BiodataInput(
 @Composable
 private fun SkillOption(label: String, checked: Boolean, onCheckedChange: (Boolean) -> Unit, modifier: Modifier = Modifier) {
     Row(
-        modifier = modifier.toggleable(value = checked, role = Role.Checkbox, onValueChange = onCheckedChange),
+        modifier = modifier.heightIn(min = dimensionResource(R.dimen.skill_touch_target))
+            .toggleable(value = checked, role = Role.Checkbox, onValueChange = onCheckedChange),
         verticalAlignment = Alignment.CenterVertically
     ) {
         Checkbox(checked = checked, onCheckedChange = null)
