@@ -83,6 +83,13 @@ fun ComposableFormBiodata() {
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.spacedBy(12.dp)
                 ) {
+                    OutlinedTextField(
+                        value = namaDepan,
+                        onValueChange = { namaDepan = it },
+                        label = { Text(stringResource(id = R.string.label_nama_depan)) },
+                        shape = RoundedCornerShape(12.dp),
+                        modifier = Modifier.weight(1f)
+                    )
 
                 }
             }
