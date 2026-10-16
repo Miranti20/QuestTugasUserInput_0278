@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Transformasi warna header: merah menjadi ungu, bagian putih tetap putih. -->
+    <integer name="header_color_matrix_scale">100</integer>
+    <integer-array name="header_color_matrix">
+        <item>60</item><item>0</item><item>40</item><item>0</item><item>0</item>
+        <item>0</item><item>100</item><item>0</item><item>0</item><item>0</item>
+        <item>100</item><item>0</item><item>0</item><item>0</item><item>0</item>
+        <item>0</item><item>0</item><item>0</item><item>100</item><item>0</item>
+    </integer-array>
+</resources>

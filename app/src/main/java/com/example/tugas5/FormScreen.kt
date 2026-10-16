@@ -20,7 +20,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.graphics.ColorFilter
+import androidx.compose.ui.graphics.ColorMatrix
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalResources
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
@@ -50,6 +53,12 @@ import java.util.Locale
 @Composable
 fun ComposableFormBiodata(initialBiodata: Biodata = Biodata()) {
     val context = LocalContext.current
+    val resources = LocalResources.current
+    // Filter dibaca dari resources; aset gambar asli tetap digunakan.
+    val headerColorMatrix = remember(resources) {
+        val scale = resources.getInteger(R.integer.header_color_matrix_scale).toFloat()
+        ColorMatrix(resources.getIntArray(R.array.header_color_matrix).map { it / scale }.toFloatArray())
+    }
     val focusManager = LocalFocusManager.current
     val keyboard = LocalSoftwareKeyboardController.current
     val experienceOptions = stringArrayResource(R.array.experience_options)
@@ -110,6 +119,7 @@ fun ComposableFormBiodata(initialBiodata: Biodata = Biodata()) {
                         painter = painterResource(R.drawable.header_bg),
                         contentDescription = null,
                         contentScale = ContentScale.Crop,
+                        colorFilter = ColorFilter.colorMatrix(headerColorMatrix),
                         modifier = Modifier.fillMaxWidth().height(dimensionResource(R.dimen.header_height))
                     )
                     Box(
