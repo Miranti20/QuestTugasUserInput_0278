@@ -117,6 +117,13 @@ fun ComposableFormBiodata() {
                             shape = RoundedCornerShape(12.dp),
                             modifier = Modifier.weight(1f)
                         )
+                        OutlinedTextField(
+                            value = experience,
+                            onValueChange = { experience = it },
+                            label = { Text(stringResource(id = R.string.label_experience)) },
+                            shape = RoundedCornerShape(12.dp),
+                            modifier = Modifier.weight(1f)
+                        )
                     }
 
                 }
