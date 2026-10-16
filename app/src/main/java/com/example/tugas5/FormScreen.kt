@@ -46,7 +46,15 @@ fun FormBiodataScreen() {
                 .clip(RoundedCornerShape(topStart = 32.dp, topEnd = 32.dp))
                 .background(CardBackground)
         ) {
-            // Isi card
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .verticalScroll(rememberScrollState())
+                    .padding(24.dp),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                // Komponen form
+            }
         }
     }
 }
