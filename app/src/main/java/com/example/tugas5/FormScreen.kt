@@ -71,6 +71,13 @@ fun ComposableFormBiodata() {
                     fontWeight = FontWeight.Bold,
                     color = PurpleTitle
                 )
+                Spacer(modifier = Modifier.height(6.dp))
+                Text(
+                    text = stringResource(id = R.string.subtitle_form),
+                    fontSize = 12.sp,
+                    color = SubtitleGray,
+                    textAlign = TextAlign.Center
+                )
             }
         }
     }
