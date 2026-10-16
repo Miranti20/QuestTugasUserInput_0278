@@ -78,6 +78,13 @@ fun ComposableFormBiodata() {
                     color = SubtitleGray,
                     textAlign = TextAlign.Center
                 )
+                Spacer(modifier = Modifier.height(20.dp))
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.spacedBy(12.dp)
+                ) {
+
+                }
             }
         }
     }
