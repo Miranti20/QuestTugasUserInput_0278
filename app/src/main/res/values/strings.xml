@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">tugas5</string>
+    <string name="app_name">Form Biodata</string>
     <string name="title_form">Form Biodata</string>
     <string name="subtitle_form">Silahkan isi biodata Anda dibawah ini !!!</string>
 
@@ -14,4 +14,20 @@
     <string name="skill_uiux">UI/UX</string>
     <string name="skill_web">Web</string>
     <string name="btn_proceed">Proceed</string>
+    <string name="open_date_picker">Pilih tanggal lahir</string>
+    <string name="email_invalid">Masukkan alamat email yang valid.</string>
+    <string name="summary_title">Biodata Anda</string>
+    <string name="summary_name">Nama: %1$s %2$s</string>
+    <string name="summary_email">Email: %1$s</string>
+    <string name="summary_birth_date">Tanggal lahir: %1$s</string>
+    <string name="summary_experience">Experience: %1$s</string>
+    <string name="summary_skills">Skill: %1$s</string>
+    <string name="summary_separator">,\u0020</string>
+    <string name="btn_close">Tutup</string>
+    <string name="date_format" translatable="false">dd/MM/yyyy</string>
+    <string-array name="experience_options">
+        <item>Pemula</item>
+        <item>Menengah</item>
+        <item>Mahir</item>
+    </string-array>
 </resources>

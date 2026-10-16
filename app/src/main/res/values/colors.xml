@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="form_primary">#6B3DC4</color>
+    <color name="form_primary_container">#F0E8FF</color>
+    <color name="form_background">#FAF8FF</color>
+    <color name="form_surface">#FFFFFF</color>
+    <color name="form_text">#41414A</color>
+    <color name="form_hint">#6F707B</color>
+    <color name="form_subtitle">#929292</color>
+    <color name="form_outline">#91929E</color>
+    <color name="form_button_disabled">#E3E3E5</color>
+    <color name="form_error">#BA1A1A</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
