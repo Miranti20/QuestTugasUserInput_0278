@@ -53,7 +53,12 @@ fun FormBiodataScreen() {
                     .padding(24.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                // Komponen form
+                Text(
+                    text = stringResource(id = R.string.title_form),
+                    fontSize = 24.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = PurpleTitle
+                )
             }
         }
     }
