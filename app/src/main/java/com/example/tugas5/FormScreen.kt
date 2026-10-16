@@ -27,6 +27,13 @@ fun FormBiodataScreen() {
             .fillMaxSize()
             .background(Color.Black)
     ) {
-
+        Image(
+            painter = painterResource(id = R.drawable.header_bg),
+            contentDescription = null,
+            contentScale = ContentScale.Crop,
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(260.dp)
+        )
     }
 }
